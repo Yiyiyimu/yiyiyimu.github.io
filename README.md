@@ -1,3 +1,3 @@
 # yiyiyimu.github.io
 
-Shuyang Wu's personal website at shuyangwu.com
+Shuyang Wu's homepage at shuyangwu.com
