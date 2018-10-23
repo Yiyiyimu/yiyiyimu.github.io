@@ -1,3 +1,3 @@
 # yiyiyimu.github.io
 
-First attempt on personal website.
+Shuyang Wu's personal website at shuyangwu.com
