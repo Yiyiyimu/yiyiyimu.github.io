@@ -28,7 +28,14 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="webicon.png" >
+   <link rel="shortcut icon" href="webicon.png" >
+   
+   <!-- Load d3.js -->
+   ================================================== -->
+   <script src="https://d3js.org/d3.v4.js"></script>
+   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+   <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+   
 
 </head>
 
@@ -52,6 +59,7 @@
             <li><a class="smoothscroll" href="#extra">Extra</a></li>
             <li><a class="smoothscroll" href="#honor">Honor</a></li>
             <li><a class="smoothscroll" href="#skills">Skills</a></li>
+            <li><a class="smoothscroll" href="#outdoor">Outdoor</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -281,10 +289,12 @@
                <div class="twelve columns">
 
                      <h3>Visualization of traffic flow evolution and congestion for concert traffic guidance
-                        <img width="200" class="disappear-right" alt="sample-image"  src="images/traffic_jam.png">
-                        <img width="200" class="pull-right" alt="sample-image" src="images/traffic_jam.gif">
+                        
                      </h3>
-                     <p class="info"><em class="date">Apr. 2019 - June 2019</em></p>
+                     <p class="info"><em class="date">Apr. 2019 - June 2019</em>
+                     <img width="200" class="disappear-right" alt="sample-image"  src="images/traffic_jam.png">
+                        <img width="200" class="pull-right" alt="sample-image" src="images/traffic_jam.gif">
+                     </p>
    
                      <ul class="disc">
                         <li>Applied real-time trip line, scatter point and 3D heat map on 50,000 taxi orders, based on 
@@ -296,23 +306,23 @@
 
                </div>
 
-               <div class="row item">
+            </div> <!-- item end -->
 
-                  <div class="twelve columns">
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                     <h3>Simulation and Visualization on Air Pollutants Transmission of Power Plants</h3>
+                     <p class="info"><em class="date">Oct. 2017 - Dec. 2017</em></p>
    
-                        <h3>Simulation and Visualization on Air Pollutants Transmission of Power Plants</h3>
-                        <p class="info"><em class="date">Oct. 2017 - Dec. 2017</em></p>
-      
-                        <ul class="disc">
-                           <li>Crawled emission data of two power plants next to campus. Simulated and visualized pollutants 
-                              transmission and their impact with weather and air quality data based on numerical simulation 
-                              software and customized visualization script.</li>
-                           <li>Proved 'horrified' chimneys of power plants only contribute a little on awful air quality in campus. 
-                              In worst situation when wind direction is from power plants, SO<sub>2</sub> would account for 9% of 
-                              background value, while TSP and NO<sub>X</sub> account for much less.</li>
-                        </ul>
-   
-                  </div>
+                     <ul class="disc">
+                        <li>Crawled emission data of two power plants next to campus. Simulated and visualized pollutants 
+                           transmission and their impact with weather and air quality data based on numerical simulation 
+                           software and customized visualization script.</li>
+                        <li>Proved 'horrified' chimneys of power plants only contribute a little on awful air quality in campus. 
+                           In worst situation when wind direction is from power plants, SO<sub>2</sub> would account for 9% of 
+                           background value, while TSP and NO<sub>X</sub> account for much less.</li>
+                     </ul>
 
                </div>
 
@@ -339,15 +349,16 @@
 
                <div class="twelve columns">
 
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
+                  <h3>SWIgroup Italy</h3>
+                  <p class="info">Research Assistant <span>&bull;</span>Kgs. Lyngby, Denmark <span>&bull;</span> <em class="date">Feb. 2018 - June 2018</em></p>
 
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
+                  <ul class="disc">
+                     <li>Analyzed and interpreted spatiotemporal data of highway runoff. Improved the original Outlier Detection 
+                        method by Sensor Characterization, Local Outliers Function and PCA.</li>
+                     <li>Applied Generalized Linear Model on the processed data to make prediction, which reduced RMSE to 0.35, 
+                        and discovered possible relations between variables, to reduce the effect of sensor failure and give 
+                        suggestions for decision making.</li>
+                  </ul>
 
                </div>
 
@@ -357,15 +368,31 @@
 
                <div class="twelve columns">
 
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
+                  <h3>SJTU Ourdoor Association</h3>
+                  <p class="info">Vice President in 2017-2018 <span>&bull;</span>Shanghai, China <span>&bull;</span> <em class="date">Oct. 2015 - PRESENT</em></p>
 
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
+                  <ul class="disc">
+                     <li>Performed as a core member in the hiking team, including team leader, first aid doctor. Led team of 40 people.</li>
+                     <li>Re-constructed and normalized the publicity systems of the association inside and outside the campus. Made a series 
+                        of templates in different media version for future use.</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>World Wildlife Fund(WWF) China</h3>
+                  <p class="info">Education Department <span>&bull;</span>Shanghai, China <span>&bull;</span> <em class="date">Oct. 2017 - Apr. 2018</em></p>
+
+                  <ul class="disc">
+                     <li>Collected and edited 100+ pieces of news in environmental education, science, policies each week, to deliver real-time 
+                        environmental information to teenagers.</li>
+                     <li>Translated environmental news into Chinese, from the mainstream environmental websites including UNEP, MONGABAY and TRAFFIC.</li>
+                  </ul>
 
                </div>
 
@@ -376,6 +403,24 @@
       </div> <!-- End Work -->
 
    </section>
+
+   <section id="outdoor" style="padding: 0 0 1px; background: #fff2e9;">
+         <!-- Work
+         ----------------------------------------------- -->
+         <div class="row work">
+   
+            <div class="three columns header-col">
+               <h1><span>Outdoor</span></h1>
+            </div>
+   
+            <div class="nine columns main-col">
+                  <svg id="my_dataviz" width="400" height="300"></svg>
+   
+            </div> <!-- main-col end -->
+   
+         </div> <!-- End Work -->
+   
+      </section>
 
 
    <!-- Testimonials Section
@@ -471,6 +516,35 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+
+   <script>
+   // The svg
+   var svg = d3.select("svg"),
+         width = +svg.attr("width"),
+         height = +svg.attr("height");
+   
+   // Map and projection
+   var projection = d3.geoNaturalEarth()
+         .scale(width / 1.3 / Math.PI)
+         .translate([width / 2, height / 2])
+   
+   // Load external data and boot
+   d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson", function(data){
+   
+         // Draw the map
+         svg.append("g")
+            .selectAll("path")
+            .data(data.features)
+            .enter().append("path")
+               .attr("fill", "#69b3a2")
+               .attr("d", d3.geoPath()
+                     .projection(projection)
+               )
+               .style("stroke", "#fff")
+   })
+   
+   </script>
+
 
 </body>
 
