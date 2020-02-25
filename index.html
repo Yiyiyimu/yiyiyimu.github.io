@@ -161,8 +161,9 @@
                      <li style="margin:0 auto"><b>GPA</b> - 83/100</li>
                      <li style="margin:0 auto"><b>Standard Test</b> - TOEFL: 106 (S24), GRE: 327 (V157+Q170)</li>
                      <li><b>CS Relevant Courses</b> - <br>
-                        <b>Basic</b>: Programming, Theory of Computation, Architecture, OS, Linear Algebra, Probability and Statistics, Calculus <br>
-                        <b>Advanced</b>: Data Science, Data Mining, High-performance Computing, Data Visualization, Cryptography, Software Engineering, VR/AR U3D Program Design, Unreal Game Design
+                        <b>Math</b>: Linear Algebra, Probability and Statistics, Calculus <br>
+                        <b>Basic CS</b>: Programming, Theory of Computation, Architecture, OS, Cryptography, Software Engineering <br>
+                        <b>Specialized CS</b>: Data Science, Data Mining, HPC, Data Visualization, VR/AR Program U3D Design, Unreal Game Design 
                      </li>
                   </ul>
                </div>
@@ -211,15 +212,15 @@
                   <p class="info">Advisor: Prof. Yanbin Zhao<span>&bull;</span> <em class="date">Feb. 2019 - Exp. Nov. 2019</em></p>
 
                   <ul class="disc" >
-                     <li>Implemented automated analysis tools to detect parameters of zebrafish ventricle and artery, 
-                        improving from manual annotations, to release burdens of researchers and accelerate the detection 
-                        of environmental cardiovascular toxicants.</li>
-                     <li>Built video segmentation model to detect eight relevant parameters of zebrafish ventricle based on 
-                        ResNet-Unet, reaching <b>IoU at 87%</b> and parameter error below 10% conform to <b>90% videos</b>, 
-                        thus the method could completely replace human annotation with only basic verification.</li>                     
-                     <li>Proposed two interactive methods based on OpenCV, to automate the process of measuring artery parameters. 
-                        Final results show that compared to manual measurement, proposed automatic method raised detection rate 
-                        from <b>75% to 88%</b> and <b>20 times</b> reducing time consumption.</li>
+                     <li>Implemented end-to-end video segmentation model to detect parameters of zebrafish ventricle based 
+                        on a customized Unet with pretrained ResNet encoder, reaching IoU at 91% and videos whose parameter 
+                        error below 10% conform to 90%</li>
+                     <li>Proposed two interactive methods to detect artery parameters based on customized canny detector 
+                        with OpenCV, raising detection rate from 75\% to 88\% and 20 times reducing time consumption</li>                     
+                     <li>Built model for detecting pericardial effusion and ventrical wall thickness, based on adaptive 
+                        floodfill and spectral clustering, to provide enough generalization for various input</li>
+                     <li>Improved model from data collection, proposed best possible video shooting setup based on 
+                        Unet architecture and test results of different setups</li>
                   </ul>
 
                </div>
@@ -230,16 +231,19 @@
 
                <div class="twelve columns">
 
-                  <h3>Automatic Classification for Systematic Review in Food Toxicokinetics</h3>
-                  <p class="info">Advisor: Prof. Finn Årup Nielsen<span>&bull;</span> <em class="date">July 2018 - Sept. 2018</em></p>
+                  <h3>Analysis of Stormwater Quality Data from Online Sensors on Highway</h3>
+                  <p class="info">Advisor: Prof. Luca Vezzaro<span>&bull;</span> <em class="date">Feb. 2018 - June 2018</em></p>
 
                   <ul class="disc">
-                     <li>Applied an ensemble model of Logit Regression, xgboost and Multilayer Perceptron to classify abstracts
-                         of scientific articles in Food Toxicokinetics into 9 areas, to reduce researchers' workload.</li>
-                     <li>Raised the precision from 9\% of the original model to <b>22.4</b>}, when achieving the highest precision 
-                        at 95% recall, and reduced manual workload to 1/3 of the original.</li>
-                     <li>The features selected by model was believed regarded highly relevant with experts' review which indicates 
-                        the model in high interpretability.</li>
+                     <li>Analyzed and interpreted three-year spatiotemporal data of highway runoff quality, 
+                        collaborating with SWIgroup Italy</li>
+                     <li>Applied xgboost for short-term model and LSTM for 24h prediction, to forecast the 
+                        possible pollution events, which reached RMSE to 0.29/0.35 respectively, reliable enough 
+                        for stormwater effect</li>
+                     <li>Implemented spectrum and factor analysis to detect patterns and explained impact of different parameters 
+                        under maximal information coefficient, showing temperature and pH have significantly affected conductivity</li>
+                     <li>Proposed a mixed spatiotemporal interpolation method for completing outliers detected by LOF and missing 
+                        values, to reach both higher spatial and temporal autocorrelation</li>  
                   </ul>
 
                </div>
@@ -274,10 +278,10 @@
 
                   <ul class="disc">
                      <li>Built a meme dataset from crawling meme-caption pair from Internet and translating meme 
-                        dataset with English captions into Chinese with script.</li>
+                        dataset with English captions into Chinese with script</li>
                      <li>Built a encoder-decoder model with ResNet and Show-and-Tell model. Applied Stochastic 
-                        Beam Search to generate various meme captions.</li>
-                     <li>Achieved perplexity at 5.16 and the model indeed generated humorous memes.</li>
+                        Beam Search to generate various meme captions</li>
+                     <li>Achieved perplexity at 5.16 and the model indeed generated humorous memes</li>
                   </ul>
 
                </div>
@@ -298,15 +302,56 @@
    
                      <ul class="disc">
                         <li>Applied real-time trip line, scatter point and 3D heat map on 50,000 taxi orders, based on 
-                           deck.gl and d3.js, to visualize each track and show traffic congestion interactively.</li>
+                           deck.gl and d3.js, to visualize each track and show traffic congestion interactively</li>
                         <li>Displayed and correctly summarized traffic flow evolution of all three key areas and five 
-                           congestion area with visualization.</li>
-                        <li>Offered possible traffic guidance suggestions based on relevant information and visualization.</li>
+                           congestion area with visualization</li>
+                        <li>Offered possible traffic guidance suggestions based on relevant information and visualization</li>
                      </ul>
 
                </div>
 
             </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                     <h3>AR-based Closed Caption in Cinema
+                        
+                     </h3>
+                     <p class="info"><em class="date">Spet. 2019 - Dec. 2019</em>
+                     </p>
+   
+                     <ul class="disc">
+                        <li>Built AR Closed Caption with ARCore and OpenCV, to replace traditional device in cinema, 
+                           for helping people with hearing loss and foreigners to better immerse in movies</li>
+                        <li>Applied OpenCV on Unity to detect screen out of surroundings, and displayed subtitles at 
+                           selected place with anchors</li>
+                     </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+                  <div class="twelve columns">
+   
+                        <h3>Automatic Classification for Systematic Review in Food Toxicokinetics</h3>
+                        <p class="info"><em class="date">July 2018 - Sept. 2018</em></p>
+      
+                        <ul class="disc">
+                           <li>Applied an ensemble model of Logit Regression, xgboost and Multilayer Perceptron to classify abstracts 
+                              of scientific articles in Food Toxicokinetics into 9 areas, to reduce researchers' workload</li>
+                           <li>Raised the precision from 9% of the original model to 22.4%, to filter out 2/3 irrelevant papers 
+                              for manual workload, with metric using precision at 95% recall</li>
+                           <li>Reached strong interpretability with high relevance between experts' review and top ten important words 
+                              from model, extracted from LIME</li>
+                        </ul>
+   
+                  </div>
+   
+               </div> <!-- item end -->
 
             <div class="row item">
 
@@ -318,10 +363,10 @@
                      <ul class="disc">
                         <li>Crawled emission data of two power plants next to campus. Simulated and visualized pollutants 
                            transmission and their impact with weather and air quality data based on numerical simulation 
-                           software and customized visualization script.</li>
+                           software and customized visualization script</li>
                         <li>Proved 'horrified' chimneys of power plants only contribute a little on awful air quality in campus. 
                            In worst situation when wind direction is from power plants, SO<sub>2</sub> would account for 9% of 
-                           background value, while TSP and NO<sub>X</sub> account for much less.</li>
+                           background value, while TSP and NO<sub>X</sub> account for much less</li>
                      </ul>
 
                </div>
@@ -349,32 +394,14 @@
 
                <div class="twelve columns">
 
-                  <h3>SWIgroup Italy</h3>
-                  <p class="info">Research Assistant <span>&bull;</span>Kgs. Lyngby, Denmark <span>&bull;</span> <em class="date">Feb. 2018 - June 2018</em></p>
-
-                  <ul class="disc">
-                     <li>Analyzed and interpreted spatiotemporal data of highway runoff. Improved the original Outlier Detection 
-                        method by Sensor Characterization, Local Outliers Function and PCA.</li>
-                     <li>Applied Generalized Linear Model on the processed data to make prediction, which reduced RMSE to 0.35, 
-                        and discovered possible relations between variables, to reduce the effect of sensor failure and give 
-                        suggestions for decision making.</li>
-                  </ul>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
                   <h3>SJTU Ourdoor Association</h3>
                   <p class="info">Vice President in 2017-2018 <span>&bull;</span>Shanghai, China <span>&bull;</span> <em class="date">Oct. 2015 - PRESENT</em></p>
 
                   <ul class="disc">
-                     <li>Performed as a core member in the hiking team, including team leader, first aid doctor. Led team of 40 people.</li>
-                     <li>Re-constructed and normalized the publicity systems of the association inside and outside the campus. Made a series 
-                        of templates in different media version for future use.</li>
+                     <li>Led team of 40 people twice for two-night hiking without connection to outside world. Performed as 
+                        a core member in the hiking team, including team leader and first aid doctor</li>
+                     <li>Re-constructed the publicity systems of the association inside and outside the campus. Invited outdoor 
+                        experts for club-wise speech and responsible for liaison and activity arrangement</li>
                   </ul>
 
                </div>
@@ -389,9 +416,10 @@
                   <p class="info">Education Department <span>&bull;</span>Shanghai, China <span>&bull;</span> <em class="date">Oct. 2017 - Apr. 2018</em></p>
 
                   <ul class="disc">
-                     <li>Collected and edited 100+ pieces of news in environmental education, science, policies each week, to deliver real-time 
-                        environmental information to teenagers.</li>
-                     <li>Translated environmental news into Chinese, from the mainstream environmental websites including UNEP, MONGABAY and TRAFFIC.</li>
+                     <li>Collected and edited 100+ pieces of news in environmental education, science, policies 
+                        each week from various resources, to deliver real-time environmental information to teenagers. Got more than 15k views</li>
+                     <li>Initiated a weekly book sharing blog, recommending one environment related books for all ages. 
+                        Organized offline sharing meetings with 20 teenagers twice</li>
                   </ul>
 
                </div>
@@ -433,7 +461,7 @@
 
             <div class="two columns header-col">
 
-               <h1><span>Client Testimonials</span></h1>
+               <h1><span>Testimonials</span></h1>
 
             </div>
 
